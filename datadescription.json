@@ -1,0 +1,227 @@
+{
+    "MODIS/061/MOD13A1":[
+        {
+            "feature_name":"NDVI",
+            "unit":"",
+            "scale":0.0001,
+            "offset": 0,
+            "min":-2000,
+            "max": 10000,
+            "description" : "Normalized Difference Vegetation Index"
+        },
+        
+        {
+            "feature_name":"EVI",
+            "unit":"",
+            "scale":0.0001,
+            "offset": 0,
+            "min":-2000,
+            "max": 10000,
+            "description":"Enhanced Vegetation Index"
+        },
+        
+        {
+            "feature_name":"DetailedQA",
+            "unit": "",
+            "scale": 1,
+            "offset" : 0,
+            "description":"VI quality indicators"
+        },
+        
+        {
+            "feature_name":"sur_refl_b01",
+            "unit": "",
+            "scale": 0.0001,
+            "offset" : 0,
+            "min":0,
+            "max": 10000,
+            "wavelength":"645mm",
+            "description":"Red surface reflectance"
+        },
+        {
+            "feature_name":"sur_refl_b02",
+            "unit": "",
+            "scale": 0.0001,
+            "offset" : 0,
+            "min":0,
+            "max": 10000,
+            "wavelength":"645mm",
+            "description": "NIR surface reflectance"
+        },
+        {
+            "feature_name":"sur_refl_b03",
+            "unit": "",
+            "scale": 0.0001,
+            "offset" : 0,
+            "min":0,
+            "max": 10000,
+            "wavelength":"645mm",
+            "description":"Blue surface reflectance"
+        },
+        {
+            "feature_name":"sur_refl_b07",
+            "unit": "",
+            "scale": 0.0001,
+            "offset" : 0,
+            "min":0,
+            "max": 10000,
+            "wavelength":"2130nm/2105 - 2155nm",
+            "description":"MIR surface reflectance"
+        },
+        
+        {
+            "feature_name":"SummaryQA",
+            "unit": "",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Quality reliability of VI pixel"
+        }
+        ],
+    
+    "MODIS/061/MOD11A1":[
+        
+        {
+            "feature_name":"LST_Day_1km",
+            "unit": "K",
+            "scale": 0.02,
+            "offset" : 0,
+            "min":7500,
+            "max": 65535,
+            "description": "Daytime Land Surface Temperature"
+        },
+        {
+            "feature_name":"QC_Day",
+            "unit": "",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Daytime LST Quality Indicators"
+        },
+        {
+            "feature_name":"LST_Night_1km",
+            "unit": "K",
+            "scale": 0.02,
+            "offset" : 0,
+            "min":7500,
+            "max": 65535,
+            "description": "Nighttime Land Surface Temperature"
+        },
+        {
+            "feature_name":"QC_Night",
+            "unit": "",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Nighttime LST Quality indicators"
+        }   
+    ],
+    
+    "ECMWF/ERA5_LAND/HOURLY":[
+        {
+            "feature_name":"temperature_2m",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature to which the air, at 2 meters above the surface of the Earth"
+        },
+        
+        {
+            "feature_name":"dewpoint_temperature_2m",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature to which the air, at 2 meters above the surface of the Earth, would have to be cooled for saturation to occur. It is a measure of the humidity of the air."
+        },
+        
+        {
+            "feature_name":"surface_pressure",
+            "unit": "Pa",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Pressure (force per unit area) of the atmosphere on the surface of land, sea and in-land water."
+        },
+        
+        {
+            "feature_name":"skin_temperature",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature of the surface of the Earth."
+        },
+        
+        {
+            "feature_name":"soil_temperature_level_1",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature of the soil in layer 1 (0 - 7 cm)"
+        },
+        
+        {
+            "feature_name":"soil_temperature_level_2",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature of the soil in layer 2 (7-28 cm)"
+        },
+        
+        {
+            "feature_name":"soil_temperature_level_3",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature of the soil in layer 2 (28-100 cm)"
+        },
+        
+        {
+            "feature_name":"soil_temperature_level_4",
+            "unit": "K",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Temperature of the soil in layer 2 (100-289 cm)"
+        },
+
+        {
+            "feature_name":"volumetric_soil_water_layer_1",
+            "unit": "Volume fraction",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Volume of water in soil layer 1 (0 - 7 cm)"
+        },
+        
+        {
+            "feature_name":"volumetric_soil_water_layer_2",
+            "unit": "Volume fraction",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Volume of water in soil layer 2 (7 - 28 cm)"
+        },
+        
+        {
+            "feature_name":"volumetric_soil_water_layer_3",
+            "unit": "Volume fraction",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Volume of water in soil layer 3 (28 - 100 cm)"
+        },
+        
+        {
+            "feature_name":"volumetric_soil_water_layer_4",
+            "unit": "Volume fraction",
+            "scale": 1,
+            "offset" : 0,
+            "description": "Volume of water in soil layer 4 (100 - 289 cm)"
+        }
+    ],
+    "UCSB-CHG/CHIRPS/PENTAD":[
+        
+        {
+            "feature_name":"precipitation",
+            "unit": "mm/pentad",
+            "scale": 1,
+            "offset" : 0,
+            "min": 0,
+            "max": 1072,
+            "description": "Precipitation"
+        }
+        
+    ]
+}

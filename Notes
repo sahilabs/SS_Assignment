@@ -1,0 +1,80 @@
+
+
+Kharif: sow (june-july - monsoon) - harvest oct-nov
+- SB: soyabean (MP,MH)
+- PA: pigeon pea (MP,MH)
+- CO: cotton (MH)
+
+Climate:	Warm, rainy, humid
+
+Rabi  : sow(oct-nov - post monsoon) - harvest march-april
+- WH: wheat (MP,MH)
+- GM: gram (MH,MP)
+
+Climate: Cooler, dry
+
+--------------------------------------------------
+
+Yield=a⋅NDVI_peak ​+  b⋅Rainfall + c⋅Temperature+d
+
+--------
+
+NDVI: Normalized Difference Vegation Index, it's widely used remote sensing index that help measure the health and desnity of vegtation using statellite imagery.
+
+NDVI = (NIR - RED)/(NIR + RED)
+
+* NIR: Near infrared Light(vegation strongly reflect this)
+* RED: Red light (vegatation absorbs this for photosynthesis)
+
+Why NDVI is Useful
+- Healthy vegetation reflects more NIR and absorbs more red light.
+- NDVI captures this contrast to estimate vegetation health and coverage.
+- Unhealthy or sparse vegetation reflects less NIR.
+
+
+
+EVI: EVI stands for Enhanced Vegetation Index — a vegetation index like NDVI, but designed to be more sensitive to dense vegetation and to reduce the influence of atmospheric effects and soil background. 
+
+- formula uses blue light as well to remove atmoshere refelectance
+- Two areas may have equal NDVI:
+    - One with sparse vegetation and light-colored soil
+    - Another with slightly denser vegetation and darker soil
+    NDVI can’t distinguish well between them
+
+
+
+Start with NDVI:
+- Easier to understand and compare with past research.
+- Works well in most conditions with healthy vegetation.
+
+Also compute EVI:
+- Compare trends with NDVI across time and crop stages.
+- In most studies, EVI gives more stable and **stronger correlations with yield**, especially in areas with complex terrain, soil brightness, or high canopy density.
+
+
+
+
+Investigation:
+
+- Tracking NDVI peak values over time for the Kharif and Rabi seasons is one of the most practical and widely used methods to assess and compare:
+ - at the time of growth compare the nvdi peak - if peak is different then there is problem
+ - process the , mark kharif month sowing, kharif harvesting
+
+ Timing	Was there delay in NDVI rise?
+
+
+ Use NDVI in June (early monsoon / early Kharif) as baseline, and compare it to the NDVI peak later (e.g., Sep–Oct), then compare that delta to past 5–10 years.
+
+
+water source: Rainfall / Precipitation
+Soil Moisture: even if rainfall, relatively soil is moisture enough than it's a problem, how steady was the moisture
+
+Temperature influences:
+    Germination: Too cold or too hot can delay/stop sprouting.
+
+    Growth Rate: Plants grow faster under optimal temps.
+
+    Flowering: Sensitive to heat. High temps → flower drop → yield loss.
+
+    Evapotranspiration: High temp = higher water demand
+
